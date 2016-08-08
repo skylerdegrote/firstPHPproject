@@ -1,26 +1,23 @@
 
-/**
- * Created by PhpStorm.
- * User: skylerdegrote
- * Date: 8/6/16
- * Time: 5:40 PM
- */
+<?php
+    include ("../process_login.php");
 
+?>
 <!DOCTYPE html>
 <head>
 <title> <?php echo $page_title ?></title>
-<link type="text/css" rel="stylesheet" href="css/header.css"/>
+<link type="text/css" rel="stylesheet" href="../styles/header.css"/>
 </head>
 
 <body>
 
 <header>
     <div class="navigation">
-        <h3 class="navLink">Home</h3>
-        <h3 class="navLink">Write It</h3>
-        <h3 class="navLink">Design It</h3>
-        <h3 class="navLink">Code It</h3>
-        <h3 class="navLink">Do It</h3>
+        <ul>
+            <li <?php if($page_title == 'home') {echo 'id="activeNavLink"';} ?>><a href="index.php">Home</a></li>
+            <li class="alignRight" <?php if($page_title == 'log in') {echo 'id="activeNavLink"';} ?>><a href="log-in.php">Log In</a></li>
+            <li class="alignRight"><?php echo $username ?></li>
+        </ul>
     </div>
 </header>
 

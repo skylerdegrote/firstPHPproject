@@ -1,0 +1,32 @@
+body {
+    background-color: #67d5a0;
+}
+
+.navigation {
+    background-color: #05480b;
+    min-height: 100px;
+    color: #67d5a0;
+}
+
+.navigation ul li a {
+    color: #67d5a0;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+
+.activeNavLink {
+    border-bottom: 3px solid black;
+    font-weight: bold;
+}
+
+ul li {
+    list-style: none;
+    float: left;
+    margin: 15px;
+}
+
+.alignRight {
+    float: right;
+    margin-right: 50px;
+}
+
