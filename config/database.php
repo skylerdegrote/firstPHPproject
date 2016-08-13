@@ -1,12 +1,22 @@
 <?php
 
 
-$databasehost='localhost';
-$databaseuser='root';
-$databasepassword='root';
-$db=new mysqli($databasehost,$databaseuser,$databasepassword);
-if($db->connect_errno){
-    die('Could not connect database');
+
+
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$database = "write-it";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $database);
+
+// Check connection
+if (mysqli_connect_errno())
+{
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}else{
+    echo "success!";
 }
 
 
@@ -16,6 +26,10 @@ if($db->connect_errno){
 
 
 
-
-
 ?>
+
+
+
+
+
+
