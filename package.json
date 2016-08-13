@@ -1,0 +1,19 @@
+{
+  "name": "firstphpproject",
+  "version": "1.0.0",
+  "description": "template php project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skylerdegrote/firstPHPproject.git"
+  },
+  "author": "Skyler DeGrote",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skylerdegrote/firstPHPproject/issues"
+  },
+  "homepage": "https://github.com/skylerdegrote/firstPHPproject#readme"
+}
